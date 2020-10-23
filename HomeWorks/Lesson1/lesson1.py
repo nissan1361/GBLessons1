@@ -87,3 +87,4 @@ while a < b:
     count = count + 1
 print("на {} день спортсмен достиг результата — не менее {} км".format(count, b))
 
+# end of file
