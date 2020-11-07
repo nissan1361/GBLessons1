@@ -1,0 +1,5 @@
+Vasilkova 20000
+Petrov 40000
+Soloview 50000
+Toporov 10000
+Ivanova 5000
