@@ -9,7 +9,7 @@ class Cell:
         if (self.count - other.count) > 0:
             return Cell(self.count - other.count)
         else:
-            return print("Разность ячеек < 0!")
+            raise ValueError('Не верное количество клеток')
 
     def __mul__(self, other):
         return Cell(self.count * other.count)
@@ -33,6 +33,9 @@ sells = Cell(int(cnt))
 sells2 = Cell(int(cnt2))
 
 print(sells + sells2)
-print(sells - sells2)
+if sells.count < sells2.count:
+    raise ValueError('Не верное количество клеток')
+else:
+    print(sells - sells2)
 print(sells * sells2)
 print(sells / sells2)
